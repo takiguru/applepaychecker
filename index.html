@@ -13,12 +13,34 @@
   <body class="grey lighten-3">
     <div class="container center">
       <h1 class="center">Apple Pay region checker</h1>
-      <div class="container">
-        <h2>Beta version available?</h2>
-        <h3 id="enableRetail"></h3>
+      <h2 class="center" id="region">Your country code:</h2>
+      <div class="container" id="loading-container">
+        <h1>Loading ...</h1>
+      </div>
+      <div class="container" style="display:none" id="data-container">
+        <h2>Under beta testing?</h2>
+        <h3 id="enabledBeta" style="color:red">NO :(</h3>
         <br />
-        <h2>Retail version available?</h2>
-        <h3 id="enableBeta"></h3>
+        <h2>Can you use it now in your country?</h2>
+        <h3 id="enabledRetail" style="color:red">NO :(</h3>
+      </div>
+      <div class="container">
+        <h2>How it's work?</h2>
+        <p>
+          This site fetches Apple's configuration about payments and match with
+          your current country code
+        </p>
+        <p>
+          Beta configuration url:
+          <a>
+            https://smp-device-content.apple.com/static/region/v2/config-beta.json
+          </a>
+        </p>
+        <p>
+          Retail configuration url:<a
+            >https://smp-device-content.apple.com/static/region/v2/config.json</a
+          >
+        </p>
       </div>
     </div>
     <script src="./checker.js"></script>
