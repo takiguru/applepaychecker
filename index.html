@@ -1,6 +1,27 @@
 <html>
-  <head> </head>
-  <body>
-    Test
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="grey lighten-3">
+    <div class="container center">
+      <h1 class="center">Apple Pay region checker</h1>
+      <div class="container">
+        <h2>Beta version available?</h2>
+        <h3 id="enableRetail"></h3>
+        <br />
+        <h2>Retail version available?</h2>
+        <h3 id="enableBeta"></h3>
+      </div>
+    </div>
+    <script src="./checker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
